@@ -12,4 +12,13 @@ trait loadTasks
     {
         return $this->task(DrushStack::class, $pathToDrush);
     }
+
+    /**
+     * @param string $pathToDrush
+     * @return DrushStack
+     */
+    protected function taskDrush8Stack($pathToDrush = 'drush')
+    {
+        return $this->task(DrushStack::class, $pathToDrush);
+    }
 }
